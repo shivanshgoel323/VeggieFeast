@@ -1,0 +1,118 @@
+/* Reset and font setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Background Image */
+  body {
+    height: 100vh;
+    background: url("/Mini_Project/images/back.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Optional dark overlay to make the form pop */
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* soft dark overlay for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Clean white container */
+  .auth-container {
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 40px 30px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Heading */
+  .auth-container h1 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Input fields */
+  .auth-container input[type="text"],
+  .auth-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f9f9f9;
+    font-size: 15px;
+    transition: 0.3s ease;
+  }
+  
+  .auth-container input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #43c6ac;
+    background: #fff;
+  }
+  
+  /* Button styling */
+  .auth-container button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #f83600, #f9d423);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background 0.4s ease;
+  }
+  
+  .auth-container button:hover {
+    background: linear-gradient(to right, #f9d423, #f83600);
+  }
+  
+  /* Link styling */
+  .auth-container .login-link {
+    margin-top: 15px;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .auth-container .login-link a {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .auth-container .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Message area */
+  #signup-message {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
