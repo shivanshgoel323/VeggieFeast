@@ -35,6 +35,3 @@ Tech Stack-
 HTML5
 CSS3
 Javascript(LocalStorage for login/signup)
-CSS3
-
-JavaScript (LocalStorage for login/signup)
